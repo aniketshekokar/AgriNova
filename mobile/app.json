@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "AgriNova",
+    "slug": "agrinova",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {"package": "com.sagroup.agrinova"},
+    "ios": {"bundleIdentifier": "com.sagroup.agrinova"},
+    "splash": {"backgroundColor": "#f0fdf4"}
+  }
+}
