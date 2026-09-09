@@ -1,0 +1,1973 @@
+// Mock Database for AGRINOVA startup MVP
+
+export const initialCrops = [
+  {
+    "id": "crop_1",
+    "name": "Tomato",
+    "category": "Vegetables",
+    "quantity": 45,
+    "unit": "Quintal",
+    "expectedPrice": 2800,
+    "location": "Nashik Market",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Rajesh Patil",
+    "phone": "9823456789",
+    "imageUrl": "https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=600&q=80",
+    "description": "Fresh red hybrid tomatoes. Handpicked, sorted, and packed in plastic crates."
+  },
+  {
+    "id": "crop_2",
+    "name": "Onion",
+    "category": "Vegetables",
+    "quantity": 120,
+    "unit": "Quintal",
+    "expectedPrice": 2400,
+    "location": "Pune Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Good",
+    "farmer": "Sanjay Deshmukh",
+    "phone": "9845612307",
+    "imageUrl": "https://images.unsplash.com/photo-1618519764620-7403abdbfee9?auto=format&fit=crop&w=600&q=80",
+    "description": "Lasalgaon quality pink onions. Sun-dried, well-cured, and ready for long-distance transport."
+  },
+  {
+    "id": "crop_3",
+    "name": "Wheat",
+    "category": "Grains",
+    "quantity": 350,
+    "unit": "Quintal",
+    "expectedPrice": 2200,
+    "location": "Delhi Mandi",
+    "harvestDate": "2026-07-28",
+    "quality": "Good",
+    "farmer": "Harpreet Singh",
+    "phone": "9912345678",
+    "imageUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
+    "description": "Sharbati premium wheat. Machine-cleaned, dry, and moisture-tested (<12%)."
+  },
+  {
+    "id": "crop_4",
+    "name": "Potato",
+    "category": "Vegetables",
+    "quantity": 80,
+    "unit": "Quintal",
+    "expectedPrice": 1600,
+    "location": "Kolhapur Market",
+    "harvestDate": "2026-08-06",
+    "quality": "Average",
+    "farmer": "Ananda Shinde",
+    "phone": "9156783421",
+    "imageUrl": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80",
+    "description": "Jyoti variety medium-sized potatoes. Sorted and packed in jute bags."
+  },
+  {
+    "id": "crop_5",
+    "name": "Chilli",
+    "category": "Spices",
+    "quantity": 15,
+    "unit": "Quintal",
+    "expectedPrice": 12000,
+    "location": "Sangli Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Vikas Rao",
+    "phone": "9867543210",
+    "imageUrl": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80",
+    "description": "Guntur Teja dry red chillies. Highly pungent, bright red, well sun-dried."
+  },
+  {
+    "id": "crop_6",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 200,
+    "unit": "Quintal",
+    "expectedPrice": 3800,
+    "location": "Nagpur Market",
+    "harvestDate": "2026-07-30",
+    "quality": "Good",
+    "farmer": "Madhukar Gavit",
+    "phone": "9422001122",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Basmati long-grain rice. Aged 1 year, premium aroma, milled and sorted."
+  },
+  {
+    "id": "crop_7",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 50,
+    "unit": "Quintal",
+    "expectedPrice": 7200,
+    "location": "Aurangabad Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Good",
+    "farmer": "Babasaheb Kadam",
+    "phone": "9850123456",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Long-staple BT cotton. Free from trash, high strength, dry."
+  },
+  {
+    "id": "crop_8",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 106,
+    "unit": "Quintal",
+    "expectedPrice": 285,
+    "location": "Ahmednagar (Ahilyanagar) Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Vijay Patil",
+    "phone": "9812345678",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Ahmednagar (Ahilyanagar) district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_9",
+    "name": "Onion",
+    "category": "Vegetables",
+    "quantity": 113,
+    "unit": "Quintal",
+    "expectedPrice": 2400,
+    "location": "Ahmednagar (Ahilyanagar) Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Sunil Deshmukh",
+    "phone": "9823456780",
+    "imageUrl": "https://images.unsplash.com/photo-1618519764620-7403abdbfee9?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Onion from local farms in Ahmednagar (Ahilyanagar) district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_10",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 120,
+    "unit": "Quintal",
+    "expectedPrice": 7125,
+    "location": "Akola Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Sanjay Shinde",
+    "phone": "9834567891",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Akola district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_11",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 127,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Akola Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Tukaram More",
+    "phone": "9845678902",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Akola district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_12",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 134,
+    "unit": "Quintal",
+    "expectedPrice": 7025,
+    "location": "Amravati Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Balasaheb Pawar",
+    "phone": "9856789013",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Amravati district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_13",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 141,
+    "unit": "Quintal",
+    "expectedPrice": 4450,
+    "location": "Amravati Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Dnyaneshwar Gawade",
+    "phone": "9867890124",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Amravati district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_14",
+    "name": "Bajra",
+    "category": "Grains",
+    "quantity": 148,
+    "unit": "Quintal",
+    "expectedPrice": 2075,
+    "location": "Beed Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Sharad Jadhav",
+    "phone": "9878901235",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Bajra from local farms in Beed district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_15",
+    "name": "Jowar",
+    "category": "Grains",
+    "quantity": 155,
+    "unit": "Quintal",
+    "expectedPrice": 2800,
+    "location": "Beed Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Anil Gavit",
+    "phone": "9889012346",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Jowar from local farms in Beed district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_16",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 162,
+    "unit": "Quintal",
+    "expectedPrice": 3625,
+    "location": "Bhandara Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Prabhakar Rao",
+    "phone": "9890123457",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Bhandara district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_17",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 169,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Bhandara Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Abasaheb Salunkhe",
+    "phone": "9901234568",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Bhandara district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_18",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 176,
+    "unit": "Quintal",
+    "expectedPrice": 7025,
+    "location": "Buldhana Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Eknath Kadam",
+    "phone": "9912345679",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Buldhana district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_19",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 183,
+    "unit": "Quintal",
+    "expectedPrice": 4450,
+    "location": "Buldhana Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Dattatray Shinde",
+    "phone": "9923456780",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Buldhana district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_20",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 190,
+    "unit": "Quintal",
+    "expectedPrice": 3575,
+    "location": "Chandrapur Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Vitthal Rao",
+    "phone": "9934567891",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Chandrapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_21",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 197,
+    "unit": "Quintal",
+    "expectedPrice": 7100,
+    "location": "Chandrapur Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Namdev Patil",
+    "phone": "9945678902",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Chandrapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_22",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 204,
+    "unit": "Quintal",
+    "expectedPrice": 7125,
+    "location": "Chhatrapati Sambhajinagar Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Pandurang Joshi",
+    "phone": "9956789013",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Chhatrapati Sambhajinagar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_23",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 211,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Chhatrapati Sambhajinagar Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Bhimrao Ambedkar",
+    "phone": "9967890124",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Chhatrapati Sambhajinagar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_24",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 218,
+    "unit": "Quintal",
+    "expectedPrice": 7025,
+    "location": "Dhule Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Shivaji More",
+    "phone": "9978901235",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Dhule district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_25",
+    "name": "Bajra",
+    "category": "Grains",
+    "quantity": 225,
+    "unit": "Quintal",
+    "expectedPrice": 2050,
+    "location": "Dhule Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Sadashiv Jadhav",
+    "phone": "9989012346",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Bajra from local farms in Dhule district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_26",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 232,
+    "unit": "Quintal",
+    "expectedPrice": 3575,
+    "location": "Gadchiroli Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Krishna Gavit",
+    "phone": "9990123457",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Gadchiroli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_27",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 239,
+    "unit": "Quintal",
+    "expectedPrice": 4500,
+    "location": "Gadchiroli Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Vijay Patil",
+    "phone": "9812345678",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Gadchiroli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_28",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 246,
+    "unit": "Quintal",
+    "expectedPrice": 3625,
+    "location": "Gondia Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Sunil Deshmukh",
+    "phone": "9823456780",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Gondia district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_29",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 253,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Gondia Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Sanjay Shinde",
+    "phone": "9834567891",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Gondia district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_30",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 260,
+    "unit": "Quintal",
+    "expectedPrice": 4425,
+    "location": "Hingoli Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Tukaram More",
+    "phone": "9845678902",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Hingoli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_31",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 267,
+    "unit": "Quintal",
+    "expectedPrice": 7050,
+    "location": "Hingoli Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Balasaheb Pawar",
+    "phone": "9856789013",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Hingoli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_32",
+    "name": "Banana",
+    "category": "Fruits",
+    "quantity": 274,
+    "unit": "Quintal",
+    "expectedPrice": 2175,
+    "location": "Jalgaon Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Dnyaneshwar Gawade",
+    "phone": "9867890124",
+    "imageUrl": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Banana from local farms in Jalgaon district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_33",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 281,
+    "unit": "Quintal",
+    "expectedPrice": 7100,
+    "location": "Jalgaon Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Sharad Jadhav",
+    "phone": "9878901235",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Jalgaon district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_34",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 288,
+    "unit": "Quintal",
+    "expectedPrice": 7125,
+    "location": "Jalna Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Anil Gavit",
+    "phone": "9889012346",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Jalna district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_35",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 295,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Jalna Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Prabhakar Rao",
+    "phone": "9890123457",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Jalna district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_36",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 52,
+    "unit": "Quintal",
+    "expectedPrice": 235,
+    "location": "Kolhapur Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Abasaheb Salunkhe",
+    "phone": "9901234568",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Kolhapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_37",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 59,
+    "unit": "Quintal",
+    "expectedPrice": 3550,
+    "location": "Kolhapur Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Eknath Kadam",
+    "phone": "9912345679",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Kolhapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_38",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 66,
+    "unit": "Quintal",
+    "expectedPrice": 4475,
+    "location": "Latur Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Dattatray Shinde",
+    "phone": "9923456780",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Latur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_39",
+    "name": "Jowar",
+    "category": "Grains",
+    "quantity": 73,
+    "unit": "Quintal",
+    "expectedPrice": 2800,
+    "location": "Latur Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Vitthal Rao",
+    "phone": "9934567891",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Jowar from local farms in Latur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_40",
+    "name": "Vegetables",
+    "category": "Vegetables",
+    "quantity": 80,
+    "unit": "Quintal",
+    "expectedPrice": 2525,
+    "location": "Mumbai City Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Namdev Patil",
+    "phone": "9945678902",
+    "imageUrl": "https://images.unsplash.com/photo-1566385101042-1a0a0451b6c1?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Vegetables from local farms in Mumbai City district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_41",
+    "name": "Vegetables",
+    "category": "Vegetables",
+    "quantity": 87,
+    "unit": "Quintal",
+    "expectedPrice": 2550,
+    "location": "Mumbai Suburban Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Pandurang Joshi",
+    "phone": "9956789013",
+    "imageUrl": "https://images.unsplash.com/photo-1566385101042-1a0a0451b6c1?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Vegetables from local farms in Mumbai Suburban district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_42",
+    "name": "Orange",
+    "category": "Fruits",
+    "quantity": 94,
+    "unit": "Quintal",
+    "expectedPrice": 4425,
+    "location": "Nagpur Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Bhimrao Ambedkar",
+    "phone": "9967890124",
+    "imageUrl": "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Orange from local farms in Nagpur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_43",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 101,
+    "unit": "Quintal",
+    "expectedPrice": 7050,
+    "location": "Nagpur Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Shivaji More",
+    "phone": "9978901235",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Nagpur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_44",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 108,
+    "unit": "Quintal",
+    "expectedPrice": 4475,
+    "location": "Nanded Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Sadashiv Jadhav",
+    "phone": "9989012346",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Nanded district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_45",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 115,
+    "unit": "Quintal",
+    "expectedPrice": 7100,
+    "location": "Nanded Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Krishna Gavit",
+    "phone": "9990123457",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Nanded district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_46",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 122,
+    "unit": "Quintal",
+    "expectedPrice": 7125,
+    "location": "Nandurbar Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Vijay Patil",
+    "phone": "9812345678",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Nandurbar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_47",
+    "name": "Bajra",
+    "category": "Grains",
+    "quantity": 129,
+    "unit": "Quintal",
+    "expectedPrice": 2150,
+    "location": "Nandurbar Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Sunil Deshmukh",
+    "phone": "9823456780",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Bajra from local farms in Nandurbar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_48",
+    "name": "Onion",
+    "category": "Vegetables",
+    "quantity": 136,
+    "unit": "Quintal",
+    "expectedPrice": 2325,
+    "location": "Nashik Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Sanjay Shinde",
+    "phone": "9834567891",
+    "imageUrl": "https://images.unsplash.com/photo-1618519764620-7403abdbfee9?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Onion from local farms in Nashik district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_49",
+    "name": "Grape",
+    "category": "Fruits",
+    "quantity": 143,
+    "unit": "Quintal",
+    "expectedPrice": 6950,
+    "location": "Nashik Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Tukaram More",
+    "phone": "9845678902",
+    "imageUrl": "https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Grape from local farms in Nashik district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_50",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 150,
+    "unit": "Quintal",
+    "expectedPrice": 4475,
+    "location": "Dharashiv (Osmanabad) Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Balasaheb Pawar",
+    "phone": "9856789013",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Dharashiv (Osmanabad) district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_51",
+    "name": "Jowar",
+    "category": "Grains",
+    "quantity": 157,
+    "unit": "Quintal",
+    "expectedPrice": 2800,
+    "location": "Dharashiv (Osmanabad) Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Dnyaneshwar Gawade",
+    "phone": "9867890124",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Jowar from local farms in Dharashiv (Osmanabad) district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_52",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 164,
+    "unit": "Quintal",
+    "expectedPrice": 3625,
+    "location": "Palghar Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Sharad Jadhav",
+    "phone": "9878901235",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Palghar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_53",
+    "name": "Vegetables",
+    "category": "Vegetables",
+    "quantity": 171,
+    "unit": "Quintal",
+    "expectedPrice": 2550,
+    "location": "Palghar Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Anil Gavit",
+    "phone": "9889012346",
+    "imageUrl": "https://images.unsplash.com/photo-1566385101042-1a0a0451b6c1?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Vegetables from local farms in Palghar district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_54",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 178,
+    "unit": "Quintal",
+    "expectedPrice": 4425,
+    "location": "Parbhani Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Prabhakar Rao",
+    "phone": "9890123457",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Parbhani district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_55",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 185,
+    "unit": "Quintal",
+    "expectedPrice": 7050,
+    "location": "Parbhani Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Abasaheb Salunkhe",
+    "phone": "9901234568",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Parbhani district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_56",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 192,
+    "unit": "Quintal",
+    "expectedPrice": 285,
+    "location": "Pune Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Eknath Kadam",
+    "phone": "9912345679",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Pune district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_57",
+    "name": "Onion",
+    "category": "Vegetables",
+    "quantity": 199,
+    "unit": "Quintal",
+    "expectedPrice": 2400,
+    "location": "Pune Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Dattatray Shinde",
+    "phone": "9923456780",
+    "imageUrl": "https://images.unsplash.com/photo-1618519764620-7403abdbfee9?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Onion from local farms in Pune district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_58",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 206,
+    "unit": "Quintal",
+    "expectedPrice": 3625,
+    "location": "Raigad Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Vitthal Rao",
+    "phone": "9934567891",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Raigad district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_59",
+    "name": "Vegetables",
+    "category": "Vegetables",
+    "quantity": 213,
+    "unit": "Quintal",
+    "expectedPrice": 2550,
+    "location": "Raigad Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Namdev Patil",
+    "phone": "9945678902",
+    "imageUrl": "https://images.unsplash.com/photo-1566385101042-1a0a0451b6c1?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Vegetables from local farms in Raigad district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_60",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 220,
+    "unit": "Quintal",
+    "expectedPrice": 3525,
+    "location": "Ratnagiri Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Pandurang Joshi",
+    "phone": "9956789013",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Ratnagiri district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_61",
+    "name": "Mango",
+    "category": "Fruits",
+    "quantity": 227,
+    "unit": "Quintal",
+    "expectedPrice": 11950,
+    "location": "Ratnagiri Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Bhimrao Ambedkar",
+    "phone": "9967890124",
+    "imageUrl": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Mango from local farms in Ratnagiri district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_62",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 234,
+    "unit": "Quintal",
+    "expectedPrice": 285,
+    "location": "Sangli Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Shivaji More",
+    "phone": "9978901235",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Sangli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_63",
+    "name": "Grapes",
+    "category": "Fruits",
+    "quantity": 241,
+    "unit": "Quintal",
+    "expectedPrice": 7000,
+    "location": "Sangli Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Sadashiv Jadhav",
+    "phone": "9989012346",
+    "imageUrl": "https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Grapes from local farms in Sangli district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_64",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 248,
+    "unit": "Quintal",
+    "expectedPrice": 335,
+    "location": "Satara Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Krishna Gavit",
+    "phone": "9990123457",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Satara district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_65",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 255,
+    "unit": "Quintal",
+    "expectedPrice": 3650,
+    "location": "Satara Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Vijay Patil",
+    "phone": "9812345678",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Satara district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_66",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 262,
+    "unit": "Quintal",
+    "expectedPrice": 3525,
+    "location": "Sindhudurg Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Sunil Deshmukh",
+    "phone": "9823456780",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Sindhudurg district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_67",
+    "name": "Mango",
+    "category": "Fruits",
+    "quantity": 269,
+    "unit": "Quintal",
+    "expectedPrice": 11950,
+    "location": "Sindhudurg Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Sanjay Shinde",
+    "phone": "9834567891",
+    "imageUrl": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Mango from local farms in Sindhudurg district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_68",
+    "name": "Jowar",
+    "category": "Grains",
+    "quantity": 276,
+    "unit": "Quintal",
+    "expectedPrice": 2775,
+    "location": "Solapur Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Tukaram More",
+    "phone": "9845678902",
+    "imageUrl": "https://images.unsplash.com/photo-1628556264757-5df88960000a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Jowar from local farms in Solapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_69",
+    "name": "Sugarcane",
+    "category": "Cash Crops",
+    "quantity": 283,
+    "unit": "Quintal",
+    "expectedPrice": 310,
+    "location": "Solapur Mandi",
+    "harvestDate": "2026-08-07",
+    "quality": "Average",
+    "farmer": "Balasaheb Pawar",
+    "phone": "9856789013",
+    "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Sugarcane from local farms in Solapur district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_70",
+    "name": "Rice",
+    "category": "Grains",
+    "quantity": 290,
+    "unit": "Quintal",
+    "expectedPrice": 3625,
+    "location": "Thane Mandi",
+    "harvestDate": "2026-08-08",
+    "quality": "Good",
+    "farmer": "Dnyaneshwar Gawade",
+    "phone": "9867890124",
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Rice from local farms in Thane district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_71",
+    "name": "Vegetables",
+    "category": "Vegetables",
+    "quantity": 297,
+    "unit": "Quintal",
+    "expectedPrice": 2550,
+    "location": "Thane Mandi",
+    "harvestDate": "2026-08-09",
+    "quality": "Good",
+    "farmer": "Sharad Jadhav",
+    "phone": "9878901235",
+    "imageUrl": "https://images.unsplash.com/photo-1566385101042-1a0a0451b6c1?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Vegetables from local farms in Thane district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_72",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 54,
+    "unit": "Quintal",
+    "expectedPrice": 7025,
+    "location": "Wardha Mandi",
+    "harvestDate": "2026-08-01",
+    "quality": "Average",
+    "farmer": "Anil Gavit",
+    "phone": "9889012346",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Wardha district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_73",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 61,
+    "unit": "Quintal",
+    "expectedPrice": 4450,
+    "location": "Wardha Mandi",
+    "harvestDate": "2026-08-02",
+    "quality": "Good",
+    "farmer": "Prabhakar Rao",
+    "phone": "9890123457",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Wardha district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_74",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 68,
+    "unit": "Quintal",
+    "expectedPrice": 4475,
+    "location": "Washim Mandi",
+    "harvestDate": "2026-08-03",
+    "quality": "Good",
+    "farmer": "Abasaheb Salunkhe",
+    "phone": "9901234568",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Washim district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_75",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 75,
+    "unit": "Quintal",
+    "expectedPrice": 7100,
+    "location": "Washim Mandi",
+    "harvestDate": "2026-08-04",
+    "quality": "Average",
+    "farmer": "Eknath Kadam",
+    "phone": "9912345679",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Washim district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_76",
+    "name": "Cotton",
+    "category": "Cash Crops",
+    "quantity": 82,
+    "unit": "Quintal",
+    "expectedPrice": 7125,
+    "location": "Yavatmal Mandi",
+    "harvestDate": "2026-08-05",
+    "quality": "Good",
+    "farmer": "Dattatray Shinde",
+    "phone": "9923456780",
+    "imageUrl": "https://images.unsplash.com/photo-1594761053050-b9695d5a75cf?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Cotton from local farms in Yavatmal district. Hand-graded and sorted."
+  },
+  {
+    "id": "crop_77",
+    "name": "Soybean",
+    "category": "Oilseeds",
+    "quantity": 89,
+    "unit": "Quintal",
+    "expectedPrice": 4550,
+    "location": "Yavatmal Mandi",
+    "harvestDate": "2026-08-06",
+    "quality": "Good",
+    "farmer": "Vitthal Rao",
+    "phone": "9934567891",
+    "imageUrl": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=600&q=80",
+    "description": "Freshly harvested Soybean from local farms in Yavatmal district. Hand-graded and sorted."
+  }
+];
+
+export const initialMarketPrices = [
+  {
+    "crop": "Tomato",
+    "current": 2800,
+    "previous": 2600,
+    "trend": "up",
+    "market": "Pune Market"
+  },
+  {
+    "crop": "Onion",
+    "current": 2400,
+    "previous": 2500,
+    "trend": "down",
+    "market": "Nashik Market"
+  },
+  {
+    "crop": "Potato",
+    "current": 1600,
+    "previous": 1600,
+    "trend": "stable",
+    "market": "Kolhapur Market"
+  },
+  {
+    "crop": "Wheat",
+    "current": 2250,
+    "previous": 2200,
+    "trend": "up",
+    "market": "Delhi Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3800,
+    "previous": 3750,
+    "trend": "up",
+    "market": "Nagpur Market"
+  },
+  {
+    "crop": "Maize",
+    "current": 1950,
+    "previous": 2050,
+    "trend": "down",
+    "market": "Ahmednagar Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7200,
+    "previous": 7200,
+    "trend": "stable",
+    "market": "Aurangabad Mandi"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 310,
+    "previous": 300,
+    "trend": "up",
+    "market": "Satara Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4600,
+    "previous": 4700,
+    "trend": "down",
+    "market": "Sangli Mandi"
+  },
+  {
+    "crop": "Chilli",
+    "current": 12000,
+    "previous": 11500,
+    "trend": "up",
+    "market": "Mumbai APMC"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 285,
+    "previous": 185,
+    "trend": "up",
+    "market": "Ahmednagar (Ahilyanagar) Mandi"
+  },
+  {
+    "crop": "Onion",
+    "current": 2400,
+    "previous": 2500,
+    "trend": "down",
+    "market": "Ahmednagar (Ahilyanagar) Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7125,
+    "previous": 7025,
+    "trend": "up",
+    "market": "Akola Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Akola Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7025,
+    "previous": 6925,
+    "trend": "up",
+    "market": "Amravati Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4450,
+    "previous": 4550,
+    "trend": "down",
+    "market": "Amravati Mandi"
+  },
+  {
+    "crop": "Bajra",
+    "current": 2075,
+    "previous": 1975,
+    "trend": "up",
+    "market": "Beed Mandi"
+  },
+  {
+    "crop": "Jowar",
+    "current": 2800,
+    "previous": 2900,
+    "trend": "down",
+    "market": "Beed Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3625,
+    "previous": 3525,
+    "trend": "up",
+    "market": "Bhandara Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Bhandara Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7025,
+    "previous": 6925,
+    "trend": "up",
+    "market": "Buldhana Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4450,
+    "previous": 4550,
+    "trend": "down",
+    "market": "Buldhana Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3575,
+    "previous": 3475,
+    "trend": "up",
+    "market": "Chandrapur Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7100,
+    "previous": 7200,
+    "trend": "down",
+    "market": "Chandrapur Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7125,
+    "previous": 7025,
+    "trend": "up",
+    "market": "Chhatrapati Sambhajinagar Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Chhatrapati Sambhajinagar Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7025,
+    "previous": 6925,
+    "trend": "up",
+    "market": "Dhule Mandi"
+  },
+  {
+    "crop": "Bajra",
+    "current": 2050,
+    "previous": 2150,
+    "trend": "down",
+    "market": "Dhule Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3575,
+    "previous": 3475,
+    "trend": "up",
+    "market": "Gadchiroli Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4500,
+    "previous": 4600,
+    "trend": "down",
+    "market": "Gadchiroli Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3625,
+    "previous": 3525,
+    "trend": "up",
+    "market": "Gondia Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Gondia Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4425,
+    "previous": 4325,
+    "trend": "up",
+    "market": "Hingoli Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7050,
+    "previous": 7150,
+    "trend": "down",
+    "market": "Hingoli Mandi"
+  },
+  {
+    "crop": "Banana",
+    "current": 2175,
+    "previous": 2075,
+    "trend": "up",
+    "market": "Jalgaon Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7100,
+    "previous": 7200,
+    "trend": "down",
+    "market": "Jalgaon Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7125,
+    "previous": 7025,
+    "trend": "up",
+    "market": "Jalna Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Jalna Mandi"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 235,
+    "previous": 135,
+    "trend": "up",
+    "market": "Kolhapur Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3550,
+    "previous": 3650,
+    "trend": "down",
+    "market": "Kolhapur Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4475,
+    "previous": 4375,
+    "trend": "up",
+    "market": "Latur Mandi"
+  },
+  {
+    "crop": "Jowar",
+    "current": 2800,
+    "previous": 2900,
+    "trend": "down",
+    "market": "Latur Mandi"
+  },
+  {
+    "crop": "Vegetables",
+    "current": 2525,
+    "previous": 2425,
+    "trend": "up",
+    "market": "Mumbai City Mandi"
+  },
+  {
+    "crop": "Vegetables",
+    "current": 2550,
+    "previous": 2650,
+    "trend": "down",
+    "market": "Mumbai Suburban Mandi"
+  },
+  {
+    "crop": "Orange",
+    "current": 4425,
+    "previous": 4325,
+    "trend": "up",
+    "market": "Nagpur Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7050,
+    "previous": 7150,
+    "trend": "down",
+    "market": "Nagpur Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4475,
+    "previous": 4375,
+    "trend": "up",
+    "market": "Nanded Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7100,
+    "previous": 7200,
+    "trend": "down",
+    "market": "Nanded Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7125,
+    "previous": 7025,
+    "trend": "up",
+    "market": "Nandurbar Mandi"
+  },
+  {
+    "crop": "Bajra",
+    "current": 2150,
+    "previous": 2250,
+    "trend": "down",
+    "market": "Nandurbar Mandi"
+  },
+  {
+    "crop": "Onion",
+    "current": 2325,
+    "previous": 2225,
+    "trend": "up",
+    "market": "Nashik Mandi"
+  },
+  {
+    "crop": "Grape",
+    "current": 6950,
+    "previous": 7050,
+    "trend": "down",
+    "market": "Nashik Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4475,
+    "previous": 4375,
+    "trend": "up",
+    "market": "Dharashiv (Osmanabad) Mandi"
+  },
+  {
+    "crop": "Jowar",
+    "current": 2800,
+    "previous": 2900,
+    "trend": "down",
+    "market": "Dharashiv (Osmanabad) Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3625,
+    "previous": 3525,
+    "trend": "up",
+    "market": "Palghar Mandi"
+  },
+  {
+    "crop": "Vegetables",
+    "current": 2550,
+    "previous": 2650,
+    "trend": "down",
+    "market": "Palghar Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4425,
+    "previous": 4325,
+    "trend": "up",
+    "market": "Parbhani Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7050,
+    "previous": 7150,
+    "trend": "down",
+    "market": "Parbhani Mandi"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 285,
+    "previous": 185,
+    "trend": "up",
+    "market": "Pune Mandi"
+  },
+  {
+    "crop": "Onion",
+    "current": 2400,
+    "previous": 2500,
+    "trend": "down",
+    "market": "Pune Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3625,
+    "previous": 3525,
+    "trend": "up",
+    "market": "Raigad Mandi"
+  },
+  {
+    "crop": "Vegetables",
+    "current": 2550,
+    "previous": 2650,
+    "trend": "down",
+    "market": "Raigad Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3525,
+    "previous": 3425,
+    "trend": "up",
+    "market": "Ratnagiri Mandi"
+  },
+  {
+    "crop": "Mango",
+    "current": 11950,
+    "previous": 12050,
+    "trend": "down",
+    "market": "Ratnagiri Mandi"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 285,
+    "previous": 185,
+    "trend": "up",
+    "market": "Sangli Mandi"
+  },
+  {
+    "crop": "Grapes",
+    "current": 7000,
+    "previous": 7100,
+    "trend": "down",
+    "market": "Sangli Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3650,
+    "previous": 3750,
+    "trend": "down",
+    "market": "Satara Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3525,
+    "previous": 3425,
+    "trend": "up",
+    "market": "Sindhudurg Mandi"
+  },
+  {
+    "crop": "Mango",
+    "current": 11950,
+    "previous": 12050,
+    "trend": "down",
+    "market": "Sindhudurg Mandi"
+  },
+  {
+    "crop": "Jowar",
+    "current": 2775,
+    "previous": 2675,
+    "trend": "up",
+    "market": "Solapur Mandi"
+  },
+  {
+    "crop": "Sugarcane",
+    "current": 310,
+    "previous": 410,
+    "trend": "down",
+    "market": "Solapur Mandi"
+  },
+  {
+    "crop": "Rice",
+    "current": 3625,
+    "previous": 3525,
+    "trend": "up",
+    "market": "Thane Mandi"
+  },
+  {
+    "crop": "Vegetables",
+    "current": 2550,
+    "previous": 2650,
+    "trend": "down",
+    "market": "Thane Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7025,
+    "previous": 6925,
+    "trend": "up",
+    "market": "Wardha Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4450,
+    "previous": 4550,
+    "trend": "down",
+    "market": "Wardha Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4475,
+    "previous": 4375,
+    "trend": "up",
+    "market": "Washim Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7100,
+    "previous": 7200,
+    "trend": "down",
+    "market": "Washim Mandi"
+  },
+  {
+    "crop": "Cotton",
+    "current": 7125,
+    "previous": 7025,
+    "trend": "up",
+    "market": "Yavatmal Mandi"
+  },
+  {
+    "crop": "Soybean",
+    "current": 4550,
+    "previous": 4650,
+    "trend": "down",
+    "market": "Yavatmal Mandi"
+  }
+];
+
+export const aiAdvice = {
+  'Tomato': {
+    current: 2800,
+    predicted: 3100,
+    trend: 'up',
+    demand: 'High',
+    supply: 'Medium-Low',
+    suggestion: 'Wait 3–5 days if possible.',
+    reason: 'Heavy rains in southern states have disrupted logistics, creating immediate shortage in urban wholesale markets. Prices will likely peak shortly.'
+  },
+  'Onion': {
+    current: 2400,
+    predicted: 2200,
+    trend: 'down',
+    demand: 'Moderate',
+    supply: 'Very High',
+    suggestion: 'Sell immediately in nearby markets.',
+    reason: 'Fresh arrivals from Egypt imports and local rabi harvest are flooding the market. Holding stock may result in quality degradation and lower price margins.'
+  },
+  'Potato': {
+    current: 1600,
+    predicted: 1650,
+    trend: 'stable',
+    demand: 'Steady',
+    supply: 'Steady',
+    suggestion: 'Hold or sell based on cash needs.',
+    reason: 'Cold storage release is regular and consumption demand remains standard. No major price shifts expected in the next 15 days.'
+  },
+  'Wheat': {
+    current: 2250,
+    predicted: 2400,
+    trend: 'up',
+    demand: 'High',
+    supply: 'Low',
+    suggestion: 'Hold for 2-3 weeks.',
+    reason: 'Government procurement season is closing, and food processing corporations are actively buying premium grain. Prices expected to rise steadily.'
+  },
+  'Chilli': {
+    current: 12000,
+    predicted: 13000,
+    trend: 'up',
+    demand: 'Very High',
+    supply: 'Low',
+    suggestion: 'Hold for premium auction.',
+    reason: 'Export demand to South-East Asia is very strong this season, and Guntur market volumes are down by 20% due to climatic shifts.'
+  }
+};
+
+export const initialOrders = [
+  {
+    id: 'ord_101',
+    cropId: 'crop_1',
+    cropName: 'Tomato',
+    quantity: 45,
+    unit: 'Quintal',
+    farmerId: 'usr_farmer1',
+    farmerName: 'Rajesh Patil',
+    farmerLocation: 'Nashik, Maharashtra',
+    farmerPhone: '9823456789',
+    buyerId: 'usr_buyer1',
+    buyerName: 'City Green Groceries',
+    buyerLocation: 'Vashi, Mumbai',
+    buyerPhone: '9123456789',
+    cropValue: 126000,
+    transportCost: 6500,
+    platformFee: 1200,
+    finalAmount: 118300, // CropValue - Transport - Platform (for farmer payout or buyer breakdown)
+    buyerTotal: 133700,  // CropValue + Transport + Platform
+    status: 'In Transit',
+    transporterId: 'usr_transporter1',
+    transporterName: 'Ramesh Kumar',
+    vehicleNumber: 'MH-12-QW-4567',
+    vehicleType: 'Tata Ace (Chota Hathi)',
+    pickupDate: '2026-08-08',
+    deliveryDate: '2026-08-10',
+    distance: 165, // km
+    qualityReport: {
+      verifiedQuality: 'Good',
+      verifiedQuantity: 45,
+      transporterRemarks: 'Sorted correctly, checked moisture, secure crates loaded.',
+      date: '2026-08-08T10:30:00Z',
+      imageProof: 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&w=150&q=80'
+    }
+  },
+  {
+    id: 'ord_102',
+    cropId: 'crop_4',
+    cropName: 'Potato',
+    quantity: 80,
+    unit: 'Quintal',
+    farmerId: 'usr_farmer2',
+    farmerName: 'Ananda Shinde',
+    farmerLocation: 'Kolhapur, Maharashtra',
+    farmerPhone: '9156783421',
+    buyerId: 'usr_buyer2',
+    buyerName: 'Star Supermarket',
+    buyerLocation: 'Kothrud, Pune',
+    buyerPhone: '9234567890',
+    cropValue: 128000,
+    transportCost: 8000,
+    platformFee: 1500,
+    finalAmount: 118500,
+    buyerTotal: 137500,
+    status: 'Completed',
+    transporterId: 'usr_transporter1',
+    transporterName: 'Ramesh Kumar',
+    vehicleNumber: 'MH-12-QW-4567',
+    vehicleType: 'Tata Ace (Chota Hathi)',
+    pickupDate: '2026-08-04',
+    deliveryDate: '2026-08-05',
+    distance: 230,
+    qualityReport: {
+      verifiedQuality: 'Average',
+      verifiedQuantity: 80,
+      transporterRemarks: 'Few bags had slight moisture, quantity verified and confirmed.',
+      date: '2026-08-04T09:15:00Z',
+      imageProof: ''
+    }
+  },
+  {
+    id: 'ord_103',
+    cropId: 'crop_2',
+    cropName: 'Onion',
+    quantity: 120,
+    unit: 'Quintal',
+    farmerId: 'usr_farmer3',
+    farmerName: 'Sanjay Deshmukh',
+    farmerLocation: 'Lasalgaon, Nashik',
+    farmerPhone: '9845612307',
+    buyerId: 'usr_buyer1',
+    buyerName: 'City Green Groceries',
+    buyerLocation: 'Vashi, Mumbai',
+    buyerPhone: '9123456789',
+    cropValue: 288000,
+    transportCost: 11000,
+    platformFee: 2500,
+    finalAmount: 274500,
+    buyerTotal: 301500,
+    status: 'Confirmed',
+    transporterId: null,
+    transporterName: null,
+    pickupDate: '2026-08-11',
+    deliveryDate: '2026-08-13',
+    distance: 220
+  }
+];
+
+export const initialTransporters = [
+  { id: 'usr_transporter1', name: 'Ramesh Kumar', phone: '9811223344', vehicleNumber: 'MH-12-QW-4567', vehicleType: 'Tata Ace', capacity: '1.5 Ton' },
+  { id: 'usr_transporter2', name: 'Gopal Yadav', phone: '9833445566', vehicleNumber: 'MH-15-AB-7890', vehicleType: 'Mahindra Bolero Picker', capacity: '2 Ton' },
+  { id: 'usr_transporter3', name: 'Satnam Singh', phone: '9877889900', vehicleNumber: 'DL-01-EF-1234', vehicleType: 'Eicher Pro Truck', capacity: '5 Ton' }
+];
+
+export const mockNotifications = [
+  { id: 'not_1', userId: 'all', title: 'Tomato price increased today', titleHi: 'टमाटर की कीमत आज बढ़ गई है', titleMr: 'टोमॅटोच्या भावात आज वाढ झाली आहे', message: 'Tomato prices spiked by ₹200/Quintal in Pune mandi. Click to view market trends.', read: false, time: '2 hours ago' },
+  { id: 'not_2', userId: 'usr_farmer1', title: 'Your crop has been ordered', titleHi: 'आपकी फसल का ऑर्डर मिल गया है', titleMr: 'तुमच्या पिकाची ऑर्डर मिळाली आहे', message: 'City Green Groceries placed an order for 45 Quintals of Tomato.', read: false, time: '5 hours ago' },
+  { id: 'not_3', userId: 'usr_farmer1', title: 'Transporter has been assigned', titleHi: 'ट्रांसपोर्टर आवंटित कर दिया गया है', titleMr: 'वाहतूकदार नियुक्त केला आहे', message: 'Driver Ramesh Kumar (MH-12-QW-4567) has accepted your pickup request.', read: true, time: '1 day ago' },
+  { id: 'not_4', userId: 'usr_buyer1', title: 'Your payment has been received', titleHi: 'आपका भुगतान प्राप्त हो गया है', titleMr: 'तुमचे पेमेंट प्राप्त झाले आहे', message: 'Payment of ₹133,700 for Order #ORD_101 was successfully processed.', read: true, time: '1 day ago' }
+];
+
+export const maharashtraDistricts = [
+  { no: 1, district: "Ahilyanagar", crops: ["Sugarcane", "Onion", "Wheat", "Bajra", "Jowar", "Soybean", "Maize", "Gram", "Groundnut", "Tomato"] },
+  { no: 2, district: "Akola", crops: ["Cotton", "Soybean", "Tur", "Jowar", "Wheat", "Gram", "Maize"] },
+  { no: 3, district: "Amravati", crops: ["Cotton", "Soybean", "Tur", "Jowar", "Wheat", "Gram", "Orange"] },
+  { no: 4, district: "Beed", crops: ["Soybean", "Cotton", "Jowar", "Bajra", "Tur", "Gram", "Sugarcane", "Pomegranate"] },
+  { no: 5, district: "Bhandara", crops: ["Rice", "Soybean", "Tur", "Wheat", "Gram", "Vegetables"] },
+  { no: 6, district: "Buldhana", crops: ["Cotton", "Soybean", "Tur", "Jowar", "Wheat", "Gram", "Maize"] },
+  { no: 7, district: "Chandrapur", crops: ["Rice", "Cotton", "Soybean", "Tur", "Wheat", "Gram", "Vegetables"] },
+  { no: 8, district: "Chhatrapati Sambhajinagar", crops: ["Cotton", "Soybean", "Maize", "Jowar", "Bajra", "Wheat", "Gram", "Tur", "Sugarcane"] },
+  { no: 9, district: "Dharashiv", crops: ["Soybean", "Jowar", "Tur", "Gram", "Wheat", "Sugarcane", "Cotton", "Sunflower"] },
+  { no: 10, district: "Dhule", crops: ["Cotton", "Maize", "Bajra", "Wheat", "Onion", "Soybean", "Groundnut", "Tur"] },
+  { no: 11, district: "Gadchiroli", crops: ["Rice", "Soybean", "Tur", "Maize", "Jowar", "Vegetables"] },
+  { no: 12, district: "Gondia", crops: ["Rice", "Soybean", "Tur", "Wheat", "Gram", "Vegetables"] },
+  { no: 13, district: "Hingoli", crops: ["Soybean", "Tur", "Cotton", "Jowar", "Wheat", "Gram", "Maize"] },
+  { no: 14, district: "Jalgaon", crops: ["Banana", "Cotton", "Maize", "Wheat", "Soybean", "Jowar", "Onion", "Groundnut"] },
+  { no: 15, district: "Jalna", crops: ["Cotton", "Soybean", "Maize", "Jowar", "Bajra", "Wheat", "Gram", "Tur", "Sweet Orange"] },
+  { no: 16, district: "Kolhapur", crops: ["Sugarcane", "Rice", "Soybean", "Groundnut", "Jowar", "Vegetables", "Turmeric"] },
+  { no: 17, district: "Latur", crops: ["Soybean", "Jowar", "Tur", "Gram", "Wheat", "Sugarcane", "Cotton", "Maize"] },
+  { no: 18, district: "Nagpur", crops: ["Orange", "Cotton", "Soybean", "Rice", "Wheat", "Tur", "Gram", "Maize", "Chilli"] },
+  { id: 19, no: 19, district: "Nanded", crops: ["Soybean", "Cotton", "Tur", "Jowar", "Wheat", "Gram", "Sugarcane", "Maize"] },
+  { no: 20, district: "Nandurbar", crops: ["Cotton", "Maize", "Jowar", "Bajra", "Wheat", "Tur", "Groundnut", "Banana"] },
+  { no: 21, district: "Nashik", crops: ["Onion", "Grapes", "Tomato", "Wheat", "Maize", "Soybean", "Pomegranate", "Vegetables"] },
+  { no: 22, district: "Palghar", crops: ["Rice", "Vegetables", "Banana", "Coconut", "Chikoo", "Mango"] },
+  { no: 23, district: "Parbhani", crops: ["Soybean", "Cotton", "Tur", "Jowar", "Wheat", "Gram", "Maize", "Sugarcane"] },
+  { no: 24, district: "Pune", crops: ["Sugarcane", "Jowar", "Wheat", "Onion", "Tomato", "Potato", "Grapes", "Vegetables"] },
+  { no: 25, district: "Raigad", crops: ["Rice", "Mango", "Coconut", "Vegetables", "Banana", "Cashew"] },
+  { no: 26, district: "Ratnagiri", crops: ["Mango", "Rice", "Cashew", "Coconut", "Kokum", "Arecanut"] },
+  { no: 27, district: "Sangli", crops: ["Sugarcane", "Grapes", "Turmeric", "Jowar", "Soybean", "Groundnut", "Pomegranate"] },
+  { no: 28, district: "Satara", crops: ["Sugarcane", "Jowar", "Wheat", "Rice", "Soybean", "Potato", "Onion", "Strawberry"] },
+  { no: 29, district: "Sindhudurg", crops: ["Rice", "Cashew", "Mango", "Coconut", "Kokum", "Arecanut"] },
+  { no: 30, district: "Solapur", crops: ["Jowar", "Sugarcane", "Pomegranate", "Grapes", "Wheat", "Maize", "Tur", "Onion"] },
+  { no: 31, district: "Thane", crops: ["Rice", "Vegetables", "Mango", "Coconut", "Banana", "Flowers"] },
+  { no: 32, district: "Wardha", crops: ["Cotton", "Soybean", "Tur", "Wheat", "Gram", "Jowar"] },
+  { no: 33, district: "Washim", crops: ["Soybean", "Cotton", "Tur", "Jowar", "Wheat", "Gram", "Maize"] },
+  { no: 34, district: "Yavatmal", crops: ["Cotton", "Soybean", "Tur", "Jowar", "Wheat", "Gram", "Maize"] },
+  { no: 35, district: "Mumbai City", crops: ["Vegetables", "Horticulture", "Peri-urban produce"] },
+  { no: 36, district: "Mumbai Suburban", crops: ["Vegetables", "Horticulture", "Peri-urban farming"] }
+];
+
+export const maharashtraDistrictNames = maharashtraDistricts.map(d => d.district);
+
+export const generateMockMarketPrices = () => {
+  const commodityBenchmarks = {
+    'Tomato': { min: 2400, max: 3300, modal: 2850, variety: 'Hybrid / Local', unit: 'Quintal' },
+    'Onion': { min: 2100, max: 2800, modal: 2450, variety: 'Red / Pink', unit: 'Quintal' },
+    'Potato': { min: 1450, max: 1950, modal: 1680, variety: 'Jyoti / Local', unit: 'Quintal' },
+    'Wheat': { min: 2150, max: 2650, modal: 2380, variety: 'Sharbati / Lokwan', unit: 'Quintal' },
+    'Rice': { min: 3250, max: 4300, modal: 3750, variety: 'Basmati / Wada Kolam', unit: 'Quintal' },
+    'Soybean': { min: 4250, max: 4950, modal: 4580, variety: 'JS-335 / Yellow', unit: 'Quintal' },
+    'Cotton': { min: 6650, max: 7450, modal: 7080, variety: 'Medium / Long Staple', unit: 'Quintal' },
+    'Sugarcane': { min: 285, max: 345, modal: 315, variety: 'Co-86032', unit: 'Quintal' },
+    'Chilli': { min: 10800, max: 14200, modal: 12400, variety: 'Teja / Guntur', unit: 'Quintal' },
+    'Banana': { min: 1850, max: 2550, modal: 2180, variety: 'Grand Naine', unit: 'Quintal' },
+    'Grapes': { min: 6300, max: 7900, modal: 7100, variety: 'Thompson Seedless', unit: 'Quintal' },
+    'Pomegranate': { min: 5900, max: 7600, modal: 6700, variety: 'Bhagwa Super', unit: 'Quintal' },
+    'Jowar': { min: 2550, max: 3150, modal: 2820, variety: 'Maldandi Hybrid', unit: 'Quintal' },
+    'Bajra': { min: 1950, max: 2450, modal: 2180, variety: 'Hybrid Desi', unit: 'Quintal' },
+    'Orange': { min: 4100, max: 5300, modal: 4700, variety: 'Nagpur Mandarin', unit: 'Quintal' },
+    'Turmeric': { min: 11200, max: 15200, modal: 13200, variety: 'Salem / Rajapuri', unit: 'Quintal' },
+    'Maize': { min: 1850, max: 2350, modal: 2080, variety: 'Yellow Hybrid', unit: 'Quintal' },
+    'Mango': { min: 9500, max: 16500, modal: 12800, variety: 'Alphonso Ratnagiri', unit: 'Quintal' }
+  };
+
+  const todayStr = new Date().toISOString().split('T')[0];
+  const list = [];
+  let idCounter = 1;
+
+  for (const dist of maharashtraDistricts) {
+    const crops = dist.crops.slice(0, 4);
+    for (const crop of crops) {
+      const benchmark = commodityBenchmarks[crop] || { min: 2200, max: 3000, modal: 2600, variety: 'Standard', unit: 'Quintal' };
+      const hash = (dist.district.length * 37 + crop.length * 19) % 15;
+      const variationFactor = 1 + ((hash - 7) * 0.015);
+      list.push({
+        id: `mp_${idCounter++}`,
+        state: 'Maharashtra',
+        district_name: dist.district,
+        market_name: `${dist.district} APMC`,
+        commodity: crop,
+        variety: benchmark.variety,
+        arrival_date: todayStr,
+        arrival_quantity: Math.round(40 + hash * 8),
+        minimum_price: Math.round(benchmark.min * variationFactor),
+        maximum_price: Math.round(benchmark.max * variationFactor),
+        modal_price: Math.round(benchmark.modal * variationFactor),
+        unit: benchmark.unit,
+        source: 'AGMARKNET',
+        last_updated: new Date().toISOString()
+      });
+    }
+  }
+  return list;
+};
+
+export const initialAgmarknetPrices = generateMockMarketPrices();
+
+

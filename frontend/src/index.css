@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-heading);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brandBg text-brandDarkText min-h-screen antialiased transition-colors duration-200;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Easy-Read Mode (High legibility, slightly larger text, relaxed line height) */
+  body.easy-read-mode {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+  }
+
+  body.easy-read-mode p,
+  body.easy-read-mode span,
+  body.easy-read-mode label,
+  body.easy-read-mode button {
+    font-weight: 500;
+  }
+
+  /* Dark Forest Theme support */
+  body.theme-dark {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  body.theme-dark .bg-white {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #1e293b !important;
+  }
+
+  body.theme-dark .bg-slate-50,
+  body.theme-dark .bg-brandBg {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border-color: #334155 !important;
+  }
+
+  body.theme-dark .text-slate-800,
+  body.theme-dark .text-slate-900,
+  body.theme-dark .text-brandDarkText {
+    color: #f8fafc !important;
+  }
+
+  body.theme-dark .text-slate-700,
+  body.theme-dark .text-slate-600,
+  body.theme-dark .text-brandSecText {
+    color: #cbd5e1 !important;
+  }
+
+  body.theme-dark .text-slate-500,
+  body.theme-dark .text-slate-400 {
+    color: #94a3b8 !important;
+  }
+
+  body.theme-dark .border-slate-100,
+  body.theme-dark .border-slate-200 {
+    border-color: #1e293b !important;
+  }
+
+  /* Warm Harvest Theme support */
+  body.theme-harvest {
+    --theme-primary: #F9A825;
+  }
+
+  /* Unified Status classes */
+  .status-available, .status-completed {
+    @apply bg-emerald-50 text-emerald-700 dark:bg-emerald-950/20 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/30;
+  }
+  .status-pending {
+    @apply bg-amber-50 text-amber-700 dark:bg-amber-950/20 dark:text-amber-450 border border-amber-100 dark:border-amber-900/30;
+  }
+  .status-intransit {
+    @apply bg-blue-50 text-blue-700 dark:bg-blue-950/20 dark:text-blue-450 border border-blue-100 dark:border-blue-900/30;
+  }
+  .status-cancelled {
+    @apply bg-red-50 text-red-650 dark:bg-red-950/20 dark:text-red-400 border border-red-100 dark:border-red-900/30;
+  }
+  .status-warning {
+    @apply bg-orange-50 text-orange-700 dark:bg-orange-950/20 dark:text-orange-400 border border-orange-100 dark:border-orange-900/30;
+  }
+
+  /* Accessible Buttons & Input classes */
+  .btn-primary {
+    @apply bg-primary-800 hover:bg-primary-900 text-white font-extrabold px-6 py-3.5 rounded-2xl text-sm transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-primary-800/10 min-h-[44px];
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-slate-50 text-primary-800 border border-primary-800 font-extrabold px-6 py-3.5 rounded-2xl text-sm transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer min-h-[44px];
+  }
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 text-brandDarkText font-extrabold px-6 py-3.5 rounded-2xl text-sm transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer shadow-md shadow-accent-500/10 min-h-[44px];
+  }
+  .card-agri {
+    @apply bg-white dark:bg-slate-850 rounded-[16px] border border-slate-100 dark:border-slate-800/80 shadow-soft hover:shadow-lg transition-all duration-250 p-6;
+  }
+  .input-agri {
+    @apply w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl text-xs focus:outline-none focus:ring-2 focus:ring-primary-500/20 font-bold dark:text-white transition-all duration-150 min-h-[44px];
+  }
+}
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Indian flag mini badge colors */
+.flag-saffron {
+  background-color: #FF9933;
+}
+.flag-white {
+  background-color: #FFFFFF;
+}
+.flag-green {
+  background-color: #138808;
+}
+
+/* Subtle pulse animation for active elements */
+.pulse-glow {
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulse-glow-anim 2s infinite;
+}
+
+@keyframes pulse-glow-anim {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Marquee live ticker animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
